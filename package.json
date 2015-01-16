@@ -1,7 +1,7 @@
 {
   "name": "hubot-gistme",
   "description": "Allow create Gist via Hubot chatops",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "author": "Jirat Ki. <saakyz@gmail.com> (http://jkn.io)",
   "license": "MIT",
   "keywords": [
