@@ -1,11 +1,11 @@
-# Hubot Example
+# Hubot Gistme
 
 An hubot script that allow you to create Gist
 
 ## Install
 
 - Add `hubot-gistme` to your package.json file.
-- Add `hubot-deploy` to your external-scripts.json file.
+- Add `hubot-gistme` to your external-scripts.json file.
 
 ## Usage
 
