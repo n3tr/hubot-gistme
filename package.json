@@ -1,7 +1,7 @@
 {
   "name": "hubot-gistme",
   "description": "Hubot script that allow you to create Gist via chat.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Jirat Ki. <saakyz@gmail.com> (http://jkn.io)",
   "license": "MIT",
   "keywords": [
