@@ -1,35 +1,41 @@
 # Hubot Example
 
-An example script package for Hubot
+An hubot script that allow you to create Gist
 
-[![Build Status](https://travis-ci.org/hubot-scripts/hubot-example.png)](https://travis-ci.org/hubot-scripts/hubot-example)
+## Install
 
-## Directory Structure
+- Add `hubot-gistme` to your package.json file.
+- Add `hubot-deploy` to your external-scripts.json file.
 
-Using the common directory structure for hubot script packages it will be easy
-to manage and allow others to easily contribute to your package.
+## Usage
 
-### script
+### Configure
 
-This directory is home to a couple of development scripts; `bootstrap` and `test`
-they're used to bootstrap the development environment and run tests
-respectively.
+- `GIST_ACCESS_TOKEN` - Default Github access with `gist` scope (optional)
 
-### src
+### Sample
 
-This directory is home to the actual hubot scripts in the package. Your
-`index.coffee` entry point will load the scripts from this directory.
+Create Gist
 
-### test
+```
+hubot gistme <code>
+```
 
-This directory is home to any tests you write for your scripts. This example
-package uses Mocha, Chai and Sinon to manage writing tests.
+or you can create with filename with extension for syntax highlight (eg. hello.js)
 
-## Advantages of Building a Package
+```
+hubot gistme <filename.js> <code>
+```
 
-Some of the advantages of building an npm package for your hubot script(s) are:
+Hubot will use `GIST_ACCESS_TOKEN` if provided. You can set your own token by
 
-* You don't need to rely on when hubot-scripts package is released.
-* You can specify dependencies in the `package.json` rather than have users
-  manually specify them
-* You can easily add tests using your favourite frameworks and libraries
+```
+hubot gist-token:set <github_token>
+```
+
+or remove your token
+
+```
+hubot gist-token:reset
+```
+
