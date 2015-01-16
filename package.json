@@ -1,0 +1,45 @@
+{
+  "name": "hubot-gistme",
+  "description": "Allow create Gist via Hubot chatops",
+  "version": "0.0.3",
+  "author": "Jirat Ki. <saakyz@gmail.com> (http://jkn.io)",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "gist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/n3tr/hubot-gistme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/n3tr/hubot-gistme/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "octonode": ">=0.6"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "coffee-script": "~1.6",
+    "gulp": "^3.7.0",
+    "gulp-clean": "^0.3.0",
+    "gulp-coffee": "^2.0.1",
+    "gulp-coffeelint": "^0.3.3",
+    "gulp-help": "^1.3.1",
+    "gulp-mocha": "^0.4.1",
+    "gulp-util": "^2.2.16",
+    "gulp-watch": "^0.6.5",
+    "hubot": "^2.7.5",
+    "hubot-test-helper": "0.0.2",
+    "mocha": "*",
+    "nock": "^0.34.1",
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "script/test"
+  }
+}
